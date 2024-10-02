@@ -9,7 +9,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
-
+st.set_page_config(layout="wide")
 
 # ---------------------------
 # Load Hugging Face model and tokenizer
