@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from transformers import pipeline
+
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
