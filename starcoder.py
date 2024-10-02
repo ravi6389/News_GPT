@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 from langchain.prompts import PromptTemplate
-# from langchain.llms import HuggingFacePipeline
-# from langchain import LLMChain
 from langchain.chains import LLMChain
 
 import os
@@ -33,8 +31,8 @@ from langchain_groq import ChatGroq
 # text_generator = load_model(MODEL_NAME)
 
 # Create a LangChain LLM using the Hugging Face pipeline
-os.environ['SSL_CERT_FILE'] = 'C:\\Users\\RSPRASAD\\AppData\\Local\\.certifi\\cacert.pem'
-GROQ_API_KEY = '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'
+
+
 llm = ChatGroq(temperature=0.8, groq_api_key=GROQ_API_KEY, model_name="llama3-8b-8192")
 # llm = HuggingFacePipeline(pipeline=text_generator)
 
@@ -72,7 +70,7 @@ Developed by Ravi Shankar Prasad.
 The dataset has following structure.
 """)
 df = pd.read_excel\
-("C:\\Users\\RSPRASAD\\OneDrive - Danaher\\Learning\\UPSC_Crawler\\data\\Summary.xlsx")
+("Summary.xlsx")
 
 st.write(df.head(3))
 
