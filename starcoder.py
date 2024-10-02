@@ -72,6 +72,7 @@ The dataset has following structure.
 df = pd.read_excel\
 ("Summary.xlsx")
 
+df['Summary'] = df['Summary'].replace('Here is a summary of the article in 3 sentences:','', regex = True)
 st.write(df.head(3))
 
 st.write('Currently it has news items for 2nd, 3rd and 4th September.\
