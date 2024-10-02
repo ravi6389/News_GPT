@@ -33,7 +33,7 @@ from langchain_groq import ChatGroq
 # Create a LangChain LLM using the Hugging Face pipeline
 
 
-llm = ChatGroq(temperature=0.8, groq_api_key=GROQ_API_KEY, model_name="llama3-8b-8192")
+llm = ChatGroq(temperature=0.8, groq_api_key=st.secrets['GROQ_API_KEY'], model_name="llama3-8b-8192")
 # llm = HuggingFacePipeline(pipeline=text_generator)
 
 # ---------------------------
